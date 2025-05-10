@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="notification_types">
+        <item>Veículo Roubado</item>
+        <item>Veículo Procurado</item>
+        <item>Seguro Expirado</item>
+        <item>Inspeção Vencida</item>
+        <item>Atividade Incomum</item>
+    </string-array>
+
+    <string-array name="notification_types_values">
+        <item>stolen</item>
+        <item>wanted</item>
+        <item>expired_insurance</item>
+        <item>expired_inspection</item>
+        <item>unusual_activity</item>
+    </string-array>
+
+    <string-array name="location_accuracy_types">
+        <item>Alta Precisão</item>
+        <item>Precisão Balanceada</item>
+        <item>Baixa Precisão</item>
+    </string-array>
+
+    <string-array name="location_accuracy_values">
+        <item>high</item>
+        <item>balanced</item>
+        <item>low</item>
+    </string-array>
+
+    <string-array name="security_alert_types">
+        <item>Veículo Roubado</item>
+        <item>Veículo Procurado</item>
+        <item>Cruzamento de Fronteira</item>
+        <item>Lista de Vigilância</item>
+        <item>Anomalias Detectadas</item>
+    </string-array>
+
+    <string-array name="security_alert_values">
+        <item>stolen_vehicle</item>
+        <item>wanted_vehicle</item>
+        <item>border_crossing</item>
+        <item>watch_list</item>
+        <item>anomalies</item>
+    </string-array>
+
+    <string-array name="report_time_ranges">
+        <item>Último Dia</item>
+        <item>Última Semana</item>
+        <item>Último Mês</item>
+        <item>Último Trimestre</item>
+        <item>Personalizado</item>
+    </string-array>
+
+    <string-array name="report_time_range_values">
+        <item>last_day</item>
+        <item>last_week</item>
+        <item>last_month</item>
+        <item>last_quarter</item>
+        <item>custom</item>
+    </string-array>
+
+    <string-array name="report_section_types">
+        <item>Resumo Executivo</item>
+        <item>Análise de Negócios</item>
+        <item>Insights Preditivos</item>
+        <item>Gráficos e Visualizações</item>
+        <item>Logs de Auditoria</item>
+    </string-array>
+
+    <string-array name="report_section_values">
+        <item>executive_summary</item>
+        <item>business_analysis</item>
+        <item>predictive_insights</item>
+        <item>charts_and_visuals</item>
+        <item>audit_logs</item>
+    </string-array>
+
+    <string-array name="data_sharing_types">
+        <item>Reconhecimento de Matrículas</item>
+        <item>Análise de Rotas</item>
+        <item>Detecção de Anomalias</item>
+        <item>Insights Preditivos</item>
+        <item>Logs de Auditoria</item>
+    </string-array>
+
+    <string-array name="data_sharing_values">
+        <item>plate_recognition</item>
+        <item>route_analysis</item>
+        <item>anomaly_detection</item>
+        <item>predictive_insights</item>
+        <item>audit_logs</item>
+    </string-array>
+
+    <string-array name="sharing_frequency_types">
+        <item>Tempo Real</item>
+        <item>Por Hora</item>
+        <item>Diário</item>
+        <item>Semanal</item>
+        <item>Mensal</item>
+    </string-array>
+
+    <string-array name="sharing_frequency_values">
+        <item>real_time</item>
+        <item>hourly</item>
+        <item>daily</item>
+        <item>weekly</item>
+        <item>monthly</item>
+    </string-array>
+
+    <string-array name="anonymization_levels">
+        <item>Sem Anonimização</item>
+        <item>Anonimização Parcial</item>
+        <item>Anonimização Completa</item>
+    </string-array>
+
+    <string-array name="anonymization_level_values">
+        <item>none</item>
+        <item>partial</item>
+        <item>full</item>
+    </string-array>
+
+    <string-array name="privacy_regulations">
+        <item>GDPR (Europa)</item>
+        <item>CCPA (Califórnia)</item>
+        <item>LGPD (Brasil)</item>
+    </string-array>
+
+    <string-array name="privacy_regulation_values">
+        <item>gdpr</item>
+        <item>ccpa</item>
+        <item>lgpd</item>
+    </string-array>
+
+    <string-array name="monitoring_frequency_types">
+        <item>Tempo Real</item>
+        <item>Por Hora</item>
+        <item>Diário</item>
+        <item>Semanal</item>
+        <item>Sob Demanda</item>
+    </string-array>
+
+    <string-array name="monitoring_frequency_values">
+        <item>real_time</item>
+        <item>hourly</item>
+        <item>daily</item>
+        <item>weekly</item>
+        <item>on_demand</item>
+    </string-array>
+
+    <string-array name="monitored_resource_types">
+        <item>CPU</item>
+        <item>Memória</item>
+        <item>Armazenamento</item>
+        <item>Tráfego de Rede</item>
+        <item>Serviços</item>
+    </string-array>
+
+    <string-array name="monitored_resource_values">
+        <item>cpu</item>
+        <item>memory</item>
+        <item>storage</item>
+        <item>network</item>
+        <item>services</item>
+    </string-array>
+
+    <string-array name="trend_analysis_frequency_types">
+        <item>Tempo Real</item>
+        <item>Diário</item>
+        <item>Semanal</item>
+        <item>Mensal</item>
+        <item>Sob Demanda</item>
+    </string-array>
+
+    <string-array name="trend_analysis_frequency_values">
+        <item>real_time</item>
+        <item>daily</item>
+        <item>weekly</item>
+        <item>monthly</item>
+        <item>on_demand</item>
+    </string-array>
+
+    <string-array name="trend_types">
+        <item>Movimento de Veículos</item>
+        <item>Pontos de Calor Geográficos</item>
+        <item>Padrões Temporais</item>
+        <item>Clusters de Anomalias</item>
+        <item>Riscos de Segurança</item>
+    </string-array>
+
+    <string-array name="trend_type_values">
+        <item>vehicle_movement</item>
+        <item>geographic_hotspot</item>
+        <item>temporal_pattern</item>
+        <item>anomaly_cluster</item>
+        <item>security_risk</item>
+    </string-array>
+
+    <string-array name="quality_check_frequency_types">
+        <item>Diário</item>
+        <item>Semanal</item>
+        <item>Mensal</item>
+        <item>Sob Demanda</item>
+    </string-array>
+
+    <string-array name="quality_check_frequency_values">
+        <item>daily</item>
+        <item>weekly</item>
+        <item>monthly</item>
+        <item>on_demand</item>
+    </string-array>
+
+    <string-array name="quality_metrics_types">
+        <item>Precisão</item>
+        <item>Taxa de Anomalias</item>
+        <item>Tempo de Processamento</item>
+        <item>Uso de Memória</item>
+        <item>Uso de CPU</item>
+    </string-array>
+
+    <string-array name="quality_metrics_values">
+        <item>accuracy</item>
+        <item>anomaly_rate</item>
+        <item>processing_time</item>
+        <item>memory_usage</item>
+        <item>cpu_usage</item>
+    </string-array>
+</resources>

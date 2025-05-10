@@ -1,0 +1,92 @@
+# Android Studio
+*.iml
+.gradle
+/local.properties
+/.idea/workspace.xml
+/.idea/libraries
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+
+# Gradle files
+*.gradle
+!project.gradle
+!settings.gradle
+
+# Built application files
+*.apk
+*.aar
+*.ap_
+*.aab
+
+# Files for the ART/Dalvik VM
+*.dex
+
+# Java class files
+*.class
+
+# Generated files
+bin/
+gen/
+out/
+
+# Logs
+*.log
+
+# Secrets and Sensitive Data
+*.env
+config.properties
+**/secrets.json
+
+# Machine Learning Models
+*.tflite
+*.pb
+
+# Backup files
+*.bak
+*.backup
+
+# Compiled Python files
+*.pyc
+__pycache__/
+
+# Virtual Environment
+venv/
+.env/
+
+# Android Profiling
+*.hprof
+
+# Crashlytics
+crashlytics-build.properties
+com_crashlytics_export_strings.xml
+
+# Firebase
+google-services.json
+
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# dotenv environment variables file
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local

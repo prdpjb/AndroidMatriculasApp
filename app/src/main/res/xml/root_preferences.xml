@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory app:title="Captura de Matrículas">
+        <SwitchPreferenceCompat
+            app:key="auto_save"
+            app:title="Salvamento Automático"
+            app:summary="Salvar automaticamente matrículas capturadas"
+            app:defaultValue="true"/>
+        
+        <SwitchPreferenceCompat
+            app:key="notifications"
+            app:title="Notificações"
+            app:summary="Receber notificações de matrículas duplicadas"
+            app:defaultValue="true"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="Segurança">
+        <SwitchPreferenceCompat
+            app:key="biometric_auth"
+            app:title="Autenticação Biométrica"
+            app:summary="Exigir autenticação biométrica para acessar histórico"
+            app:defaultValue="false"/>
+        
+        <SwitchPreferenceCompat
+            app:key="data_encryption"
+            app:title="Criptografia de Dados"
+            app:summary="Criptografar dados de matrículas"
+            app:defaultValue="true"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="Privacidade">
+        <Preference
+            app:key="clear_history"
+            app:title="Limpar Histórico"
+            app:summary="Excluir todas as matrículas capturadas"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="Backup">
+        <Preference
+            app:key="create_backup"
+            app:title="Criar Backup"
+            app:summary="Salvar dados de matrículas em um arquivo"/>
+        
+        <Preference
+            app:key="restore_backup"
+            app:title="Restaurar Backup"
+            app:summary="Restaurar dados de matrículas de um arquivo"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="Sincronização em Nuvem">
+        <Preference
+            app:key="cloud_sync"
+            app:title="Sincronizar com Google Drive"
+            app:summary="Fazer backup e restaurar dados na nuvem"/>
+        
+        <SwitchPreferenceCompat
+            app:key="auto_cloud_sync"
+            app:title="Sincronização Automática"
+            app:summary="Sincronizar automaticamente com o Google Drive"
+            app:defaultValue="false"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="Aprendizado de Máquina">
+        <SwitchPreferenceCompat
+            app:key="adaptive_learning"
+            app:title="Aprendizado Adaptativo"
+            app:summary="Melhorar reconhecimento de matrículas"
+            app:defaultValue="true"/>
+        
+        <Preference
+            app:key="ml_model_info"
+            app:title="Informações do Modelo"
+            app:summary="Detalhes do modelo de reconhecimento"/>
+        
+        <SeekBarPreference
+            app:key="confidence_threshold"
+            app:title="Limiar de Confiança"
+            app:summary="Nível de confiança para reconhecimento"
+            app:defaultValue="70"
+            app:max="100"
+            app:min="0"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="Integração e Notificações">
+        <SwitchPreferenceCompat
+            app:key="traffic_integration"
+            app:title="Integração de Trânsito"
+            app:summary="Verificar status de veículos"
+            app:defaultValue="true"/>
+        
+        <SwitchPreferenceCompat
+            app:key="unusual_activity_alerts"
+            app:title="Alertas de Atividade Incomum"
+            app:summary="Notificar sobre atividades suspeitas"
+            app:defaultValue="true"/>
+        
+        <MultiSelectListPreference
+            app:key="notification_types"
+            app:title="Tipos de Notificações"
+            app:summary="Selecionar tipos de alertas"
+            app:entries="@array/notification_types"
+            app:entryValues="@array/notification_types_values"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="Geolocalização">
+        <SwitchPreferenceCompat
+            app:key="location_tracking"
+            app:title="Rastreamento de Localização"
+            app:summary="Salvar localizações das matrículas"
+            app:defaultValue="true"/>
+        
+        <ListPreference
+            app:key="location_accuracy"
+            app:title="Precisão de Localização"
+            app:summary="Selecionar nível de precisão"
+            app:entries="@array/location_accuracy_types"
+            app:entryValues="@array/location_accuracy_values"
+            app:defaultValue="balanced"/>
+        
+        <Preference
+            app:key="route_analysis"
+            app:title="Análise de Rotas"
+            app:summary="Visualizar análise de movimentação das matrículas"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="Segurança">
+        <SwitchPreferenceCompat
+            app:key="security_integration"
+            app:title="Integração de Segurança"
+            app:summary="Verificar alertas de segurança"
+            app:defaultValue="true"/>
+        
+        <SwitchPreferenceCompat
+            app:key="anomaly_detection"
+            app:title="Detecção de Anomalias"
+            app:summary="Identificar comportamentos suspeitos"
+            app:defaultValue="true"/>
+        
+        <MultiSelectListPreference
+            app:key="security_alert_types"
+            app:title="Tipos de Alertas"
+            app:summary="Selecionar tipos de alertas de segurança"
+            app:entries="@array/security_alert_types"
+            app:entryValues="@array/security_alert_values"/>
+        
+        <Preference
+            app:key="audit_logs"
+            app:title="Logs de Auditoria"
+            app:summary="Visualizar registros de eventos"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="Colaboração Comunitária">
+        <SwitchPreferenceCompat
+            app:key="community_collaboration"
+            app:title="Colaboração Comunitária"
+            app:summary="Participar da rede colaborativa"
+            app:defaultValue="true"/>
+        
+        <SwitchPreferenceCompat
+            app:key="data_sharing"
+            app:title="Compartilhamento de Dados"
+            app:summary="Contribuir anonimamente para análises"
+            app:defaultValue="false"/>
+        
+        <MultiSelectListPreference
+            app:key="data_sharing_types"
+            app:title="Tipos de Dados Compartilhados"
+            app:summary="Selecionar dados para compartilhar"
+            app:entries="@array/data_sharing_types"
+            app:entryValues="@array/data_sharing_values"/>
+        
+        <ListPreference
+            app:key="sharing_frequency"
+            app:title="Frequência de Compartilhamento"
+            app:summary="Definir intervalo de compartilhamento"
+            app:entries="@array/sharing_frequency_types"
+            app:entryValues="@array/sharing_frequency_values"
+            app:defaultValue="daily"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="Privacidade de Dados">
+        <SwitchPreferenceCompat
+            app:key="data_anonymization"
+            app:title="Anonimização de Dados"
+            app:summary="Proteger informações pessoais"
+            app:defaultValue="true"/>
+        
+        <ListPreference
+            app:key="anonymization_level"
+            app:title="Nível de Anonimização"
+            app:summary="Definir nível de mascaramento de dados"
+            app:entries="@array/anonymization_levels"
+            app:entryValues="@array/anonymization_level_values"
+            app:defaultValue="partial"/>
+        
+        <MultiSelectListPreference
+            app:key="compliance_regulations"
+            app:title="Regulações de Privacidade"
+            app:summary="Selecionar regulações de privacidade"
+            app:entries="@array/privacy_regulations"
+            app:entryValues="@array/privacy_regulation_values"/>
+        
+        <Preference
+            app:key="privacy_policy"
+            app:title="Política de Privacidade"
+            app:summary="Visualizar detalhes de privacidade"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="Infraestrutura e Monitoramento">
+        <SwitchPreferenceCompat
+            app:key="infrastructure_monitoring"
+            app:title="Monitoramento de Infraestrutura"
+            app:summary="Habilitar monitoramento de sistema"
+            app:defaultValue="true"/>
+        
+        <ListPreference
+            app:key="monitoring_frequency"
+            app:title="Frequência de Monitoramento"
+            app:summary="Definir intervalo de verificação"
+            app:entries="@array/monitoring_frequency_types"
+            app:entryValues="@array/monitoring_frequency_values"
+            app:defaultValue="hourly"/>
+        
+        <MultiSelectListPreference
+            app:key="monitored_resources"
+            app:title="Recursos Monitorados"
+            app:summary="Selecionar recursos para monitoramento"
+            app:entries="@array/monitored_resource_types"
+            app:entryValues="@array/monitored_resource_values"/>
+        
+        <Preference
+            app:key="system_health_dashboard"
+            app:title="Painel de Saúde do Sistema"
+            app:summary="Visualizar status da infraestrutura"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="Análise de Insights">
+        <SwitchPreferenceCompat
+            app:key="trend_analysis_enabled"
+            app:title="Análise de Tendências"
+            app:summary="Habilitar análise automática de padrões"
+            app:defaultValue="true"/>
+        
+        <ListPreference
+            app:key="trend_analysis_frequency"
+            app:title="Frequência de Análise"
+            app:summary="Definir intervalo de análise de tendências"
+            app:entries="@array/trend_analysis_frequency_types"
+            app:entryValues="@array/trend_analysis_frequency_values"
+            app:defaultValue="daily"/>
+        
+        <MultiSelectListPreference
+            app:key="trend_types"
+            app:title="Tipos de Tendências"
+            app:summary="Selecionar tipos de análise"
+            app:entries="@array/trend_types"
+            app:entryValues="@array/trend_type_values"/>
+        
+        <Preference
+            app:key="insights_dashboard"
+            app:title="Painel de Insights"
+            app:summary="Visualizar análises e tendências"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="Diagnóstico e Qualidade">
+        <SwitchPreferenceCompat
+            app:key="quality_monitoring_enabled"
+            app:title="Monitoramento de Qualidade"
+            app:summary="Habilitar verificação automática de qualidade"
+            app:defaultValue="true"/>
+        
+        <ListPreference
+            app:key="quality_check_frequency"
+            app:title="Frequência de Verificação"
+            app:summary="Definir intervalo de verificação de qualidade"
+            app:entries="@array/quality_check_frequency_types"
+            app:entryValues="@array/quality_check_frequency_values"
+            app:defaultValue="daily"/>
+        
+        <MultiSelectListPreference
+            app:key="quality_metrics"
+            app:title="Métricas de Qualidade"
+            app:summary="Selecionar métricas para monitoramento"
+            app:entries="@array/quality_metrics_types"
+            app:entryValues="@array/quality_metrics_values"/>
+        
+        <Preference
+            app:key="quality_dashboard"
+            app:title="Painel de Qualidade"
+            app:summary="Visualizar relatórios de diagnóstico"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="Relatórios">
+        <Preference
+            app:key="generate_comprehensive_report"
+            app:title="Gerar Relatório Completo"
+            app:summary="Criar relatório detalhado de reconhecimento"/>
+        
+        <ListPreference
+            app:key="report_time_range"
+            app:title="Período do Relatório"
+            app:summary="Selecionar intervalo de tempo"
+            app:entries="@array/report_time_ranges"
+            app:entryValues="@array/report_time_range_values"
+            app:defaultValue="last_month"/>
+        
+        <MultiSelectListPreference
+            app:key="report_sections"
+            app:title="Seções do Relatório"
+            app:summary="Escolher seções a incluir"
+            app:entries="@array/report_section_types"
+            app:entryValues="@array/report_section_values"/>
+    </PreferenceCategory>
+</PreferenceScreen>

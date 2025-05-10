@@ -1,0 +1,29 @@
+[build]
+  command = "chmod +x gradlew && ./gradlew assembleRelease"
+  publish = "app/build/outputs/apk/release"
+  base = "."
+
+[build.environment]
+  JAVA_VERSION = "17"
+  JAVA_HOME = "/usr/lib/jvm/java-17-openjdk-amd64"
+  ANDROID_HOME = "/opt/android-sdk"
+  ANDROID_SDK_ROOT = "/opt/android-sdk"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[context.production.environment]
+  ENVIRONMENT = "production"
+
+[context.deploy-preview.environment]
+  ENVIRONMENT = "staging"
